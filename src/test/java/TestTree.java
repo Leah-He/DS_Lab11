@@ -68,9 +68,19 @@ public class TestTree
 		check(Strings.IS_IT_ALIVE);
         say("Y");
         //now what? Think of all the input and outputs here...
+		check(Strings.IS_IT_A + "Duck?");
+		say("N");
 		
-
-        
+		check(Strings.NEW_QUESTION + "Duck and Rock");
+		say("Does it has fur?");
+		
+		say("Yes");
+		
+		check(Strings.THANKS);
+		
+		check(Strings.PLAY_AGAIN);
+		
+		say("N");
         
         //close the streams at the end to enrue good behavior.
 		comp.close();
