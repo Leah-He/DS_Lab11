@@ -71,15 +71,36 @@ public class TestTree
 		check(Strings.IS_IT_A + "Duck?");
 		say("N");
 		
-		check(Strings.NEW_QUESTION + "Duck and Rock");
-		say("Does it has fur?");
+		check(Strings.WHAT_IS_THE_ANSWER);
+		say("Robert");
 		
-		say("Yes");
+		check(Strings.NEW_QUESTION + "Duck and Robert");
+		say("Is that a human?"); //update the question
+		
+		check("Answering yes to Is that a human? means Robert?");
+		say("Y");
 		
 		check(Strings.THANKS);
-		
 		check(Strings.PLAY_AGAIN);
+		say("Y");
 		
+		check(Strings.IS_IT_ALIVE);
+		say("Y");
+		
+		check("Is that a human?");
+		say("Y");
+		
+		check(Strings.IS_IT_A + "Robert?");
+		say("Y");
+		check(Strings.I_WIN);
+		check(Strings.PLAY_AGAIN);
+		say("Y");
+		
+		check(Strings.IS_IT_ALIVE);
+		say("N");
+		
+		check(Strings.I_WIN);
+		check(Strings.PLAY_AGAIN);
 		say("N");
         
         //close the streams at the end to enrue good behavior.
